@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
+ * port:8001 Provider
+ *
  * @author Leon
  */
 @RestController
@@ -16,19 +18,19 @@ public class DeptController
     @Autowired
     private DeptService service;
 
-    @RequestMapping(value="/dept/add",method=RequestMethod.POST)
+    @PutMapping(value="/dept")
     public boolean add(@RequestBody Dept dept)
     {
         return service.add(dept);
     }
 
-    @RequestMapping(value="/dept/get/{id}",method=RequestMethod.GET)
+    @GetMapping(value="/dept/{id}")
     public Dept get(@PathVariable("id") Long id)
     {
         return service.get(id);
     }
 
-    @RequestMapping(value="/dept/list",method=RequestMethod.GET)
+    @GetMapping(value="/dept")
     public List<Dept> list()
     {
         return service.list();
