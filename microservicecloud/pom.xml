@@ -67,6 +67,28 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <!--pom.xml 中的 build 标签是用于配置 pom 的，相当于 pom 的 configuration-->
+    <build>
+        <finalName>microservicecloud</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <delimiters>
+                        <delimit>$</delimit>
+                    </delimiters>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <modules>
         <module>../microservicecloud-api</module>
         <module>../microservicecloud-provider-dept-8001</module>
