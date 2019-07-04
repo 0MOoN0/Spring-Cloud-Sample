@@ -1,8 +1,7 @@
 package com.springcloud.dao;
 
-import com.priv.springcloud.entities.Dept;
+import com.springcloud.entities.Dept;
 import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

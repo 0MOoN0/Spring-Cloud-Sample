@@ -1,6 +1,6 @@
 package com.springcloud.service;
 
-import com.priv.springcloud.entities.Dept;
+import com.springcloud.entities.Dept;
 
 import java.util.List;
 

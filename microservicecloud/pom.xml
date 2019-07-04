@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.priv.springcloud</groupId>
+    <groupId>com.springcloud</groupId>
     <artifactId>microservicecloud</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -91,6 +91,7 @@
     </build>
     <modules>
         <module>../microservicecloud-api</module>
+        <module>../microservicecloud-consumer-dept-feign</module>
         <module>../microservicecloud-provider-dept-8001</module>
         <module>../microservicecloud-provider-dept-8002</module>
         <module>../microservicecloud-provider-dept-8003</module>

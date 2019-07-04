@@ -1,6 +1,6 @@
 package com.springcloud.service.impl;
 
-import com.priv.springcloud.entities.Dept;
+import com.springcloud.entities.Dept;
 import com.springcloud.dao.DeptDao;
 import com.springcloud.service.DeptService;
 import org.springframework.beans.factory.annotation.Autowired;
